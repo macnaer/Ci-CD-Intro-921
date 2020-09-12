@@ -15,3 +15,4 @@ def get_currency(URL):
         file.write(item["ccy"] + " " + item["base_ccy"] + " " +
                    item["buy"] + " | " + item["sale"]+"\n")
     file.close
+    print("Saved in file ", file)
