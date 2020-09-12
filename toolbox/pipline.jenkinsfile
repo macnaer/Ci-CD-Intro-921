@@ -11,11 +11,11 @@ pipeline  {
         timestamps()
     }
     stages {
-        stage("Test pipline") {
+        stage("Run python app") {
             steps {
-                echo 'Tesing pipline ...'
+                echo 'Running ...'
                 dir('.'){
-                    sh " echo 'Hello pipline' "
+                    sh " python start.py "
                 }
             }
         }
